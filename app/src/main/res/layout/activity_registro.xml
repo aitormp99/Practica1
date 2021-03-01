@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <EditText
+        android:id="@+id/TextId"
+        android:layout_width="319dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/TextNombre"
+        app:layout_constraintEnd_toEndOf="@+id/TextNombre"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="@+id/TextNombre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
+
+    <EditText
+        android:id="@+id/TextApellido"
+        android:layout_width="316dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Apellido"
+        app:layout_constraintBottom_toTopOf="@+id/TextContraseña"
+        app:layout_constraintEnd_toEndOf="@+id/TextContraseña"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/TextContraseña" />
+
+    <EditText
+        android:id="@+id/TextContraseña"
+        android:layout_width="322dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistrate"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegistrate"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegistrate" />
+
+    <EditText
+        android:id="@+id/TextNombre"
+        android:layout_width="317dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/TextApellido"
+        app:layout_constraintEnd_toEndOf="@+id/TextApellido"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/TextApellido" />
+
+    <Button
+        android:id="@+id/buttonRegistrate"
+        android:layout_width="330dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="248dp"
+        android:text="Registrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/botonRegresar"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="@+id/botonRegresar" />
+
+    <Button
+        android:id="@+id/botonRegresar"
+        android:layout_width="320dp"
+        android:layout_height="61dp"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegistrate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
