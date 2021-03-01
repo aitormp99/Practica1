@@ -1,25 +1,27 @@
 package com.example.primerapractica.entidades;
 
-public class Usuario {
+import java.io.Serializable;
 
-    private Integer usuario;
+public class Usuario implements Serializable {
+
+    private String usuario;
     private String nombre;
-    private String telefono;
+    private String apellido;
     private String contraseña;
 
     public Usuario(Integer id, String nombre, String telefono) {
-        this.usuario = id;
+        this.usuario = usuario;
         this.nombre = nombre;
         this.contraseña = contraseña;
-        this.telefono = telefono;
+        this.apellido = telefono;
     }
 
-    public Integer getId() {
+    public String getUsuario() {
         return usuario;
     }
 
-    public void setId(Integer id) {
-        this.usuario = id;
+    public void setUsuario(String id) {
+        this.usuario = usuario;
     }
 
     public String getNombre() {
@@ -30,12 +32,12 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setApellido(String telefono) {
+        this.apellido = telefono;
     }
 
     public String getContraseña() {

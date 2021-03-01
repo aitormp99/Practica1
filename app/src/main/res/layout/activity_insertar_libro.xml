@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertarLibro">
+
+    <EditText
+        android:id="@+id/textLibro"
+        android:layout_width="322dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Nombre Libro"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textAutor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <EditText
+        android:id="@+id/textAutor"
+        android:layout_width="322dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="84dp"
+        android:ems="10"
+        android:hint="Nombre Autor"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textFecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textFecha"
+        android:layout_width="314dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:hint="Fecha Lanzamiento (YYYY-MM-DD)"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/botonLibro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonLibro"
+        android:layout_width="361dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="436dp"
+        android:text="Agregar Libro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonRegresar2"
+        android:layout_width="362dp"
+        android:layout_height="62dp"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonLibro"
+        app:layout_constraintVertical_bias="0.386" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

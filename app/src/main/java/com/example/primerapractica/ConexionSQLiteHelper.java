@@ -18,11 +18,13 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL(Utilidades.CREAR_TABLA_USUARIO);
+        db.execSQL(Utilidades.CREAR_TABLA_LIBRO);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("drop table if exists usuario");
+        db.execSQL("drop table if exists "+Utilidades.TABLA_USUARIO);
+        db.execSQL("drop table if exists "+Utilidades.TABLA_LIBRO);
         onCreate(db);
 
     }
