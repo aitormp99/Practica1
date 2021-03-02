@@ -30,7 +30,7 @@ public class LoginDialog extends AppCompatDialogFragment {
         View view = inflater.inflate(R.layout.dialogo_inicio,null);
 
         builder.setView(view)
-
+                //al pulsar cancelar cierra el dialogo
                 .setNegativeButton("cancelar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -38,10 +38,12 @@ public class LoginDialog extends AppCompatDialogFragment {
                     }
                 }).setPositiveButton("aceptar", new DialogInterface.OnClickListener() {
             @Override
+
+            //si el usuario y contraseña son correctos abre la actividad MenuLibro
             public void onClick(DialogInterface dialog, int which) {
 
                 if (loginUsuario() == true){
-                    Intent lista = new Intent(getContext(),Lista.class);
+                    Intent lista = new Intent(getContext(), MenuLibro.class);
                     startActivity(lista);
                 }else{
                     Toast.makeText(getContext(),"Nombre de usuario o contraseña incorrecta",Toast.LENGTH_LONG).show();
@@ -58,6 +60,8 @@ public class LoginDialog extends AppCompatDialogFragment {
         return builder.create();
 
     }
+
+    //metodo el cual comprueba si el usuario o la contraseña coinciden
     public Boolean loginUsuario(){
         ConexionSQLiteHelper conn = new ConexionSQLiteHelper(getContext(),"db_usuarios",null,1);
         SQLiteDatabase db= conn.getWritableDatabase();

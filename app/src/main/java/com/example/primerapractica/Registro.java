@@ -30,12 +30,16 @@ public class Registro extends AppCompatActivity {
 
         botonRegistro=findViewById(R.id.buttonRegistrate);
         botonRegresar=findViewById(R.id.botonRegresar);
+
+        //boton que ejecuta el metodo registrarUsuario()
         botonRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 registrarUsuarios();
             }
         });
+
+        //boton que hace volver a la actividad MainActivity
         botonRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +49,7 @@ public class Registro extends AppCompatActivity {
         });
 
     }
+    //metodo para insertar un usuario en la tabla usuario
     private void registrarUsuarios(){
 
         ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"db_usuarios",null,1);
@@ -67,11 +72,11 @@ public class Registro extends AppCompatActivity {
 
 
     }
-
+    //metodo que limpia los campos de los editText actividad
     private void limpiar() {
-        campoId.setText("");
-        campoContrasena.setText("");
-        campoNombre.setText("");
-        campoApellido.setText("");
+        campoId.setText(null);
+        campoContrasena.setText(null);
+        campoNombre.setText(null);
+        campoApellido.setText(null);
     }
 }

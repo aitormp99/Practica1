@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarEliminar">
+
+    <EditText
+        android:id="@+id/TextId"
+        android:layout_width="319dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="Nombre Usuario "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/TextNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <EditText
+        android:id="@+id/TextApellido"
+        android:layout_width="316dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/TextContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/TextContraseña"
+        android:layout_width="322dp"
+        android:layout_height="62dp"
+
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/TextNombre"
+        android:layout_width="317dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/TextApellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
+
+    <Button
+        android:id="@+id/buttonBorrar"
+        android:layout_width="181dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:text="Borrar Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/botonRegresar"
+        app:layout_constraintEnd_toStartOf="@+id/buttonActualizar"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextContraseña"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonRegresar"
+        android:layout_width="387dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="52dp"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegistrate" />
+
+    <Button
+        android:id="@+id/buttonActualizar"
+        android:layout_width="181dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="84dp"
+        android:text="Actualizar Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/botonRegresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextContraseña"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Usuario a modificar o Eliminar"
+        app:layout_constraintBottom_toTopOf="@+id/TextId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Campos a rellenar para actualizar"
+        app:layout_constraintBottom_toTopOf="@+id/TextNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextId"
+        app:layout_constraintVertical_bias="0.621" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

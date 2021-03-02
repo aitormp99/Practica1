@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Lista extends AppCompatActivity {
+public class MenuLibro extends AppCompatActivity {
     Button añadirLibro;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +16,7 @@ public class Lista extends AppCompatActivity {
 
         añadirLibro= findViewById(R.id.botonAñadirLibro);
 
+        //boton que lleva a la actividad InsertarLibro
         añadirLibro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -29,21 +29,25 @@ public class InsertarLibro extends AppCompatActivity {
         botonRegistro=findViewById(R.id.botonLibro);
         botonRegresar=findViewById(R.id.botonRegresar2);
 
+        //boton que ejecuta el metodo registrarUsuarios()
         botonRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 registrarUsuarios();
             }
         });
+
+        //boton que abre la actividad Menu Libro
         botonRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent principal = new Intent(v.getContext(),Lista.class);
+                Intent principal = new Intent(v.getContext(), MenuLibro.class);
                 startActivity(principal);
             }
         });
 
     }
+    //metodo que inserta un nuevo libro en la tabla libro
     private void registrarUsuarios(){
 
         ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"db_usuarios",null,1);
@@ -56,21 +60,21 @@ public class InsertarLibro extends AppCompatActivity {
                     " ( "+Utilidades.CAMPO_NOMBRE_LIBRO+","+ Utilidades.CAMPO_AUTOR+","+Utilidades.CAMPO_LANZAMIENTO+
                     ") values ('"+campoNombre.getText().toString()+"' ,'"+campoAutor.getText().toString()+"', '"+campoFecha.getText().toString()+"' )";
             db.execSQL(insert);
-            Toast.makeText(getApplicationContext(),"Usuario añadido correctamente",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Libro añadido correctamente",Toast.LENGTH_LONG).show();
             limpiar();
             db.close();
         }catch (Exception e){
-            Toast.makeText(getApplicationContext(),"El id esta repetido",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Algun Campo es incorrecto",Toast.LENGTH_LONG).show();
             limpiar();
         }
 
 
     }
-
+    //metodo que limpia los campos de los editText actividad
     private void limpiar() {
 
-        campoAutor.setText("");
-        campoNombre.setText("");
-        campoFecha.setText("");
+        campoAutor.setText(null);
+        campoNombre.setText(null);
+        campoFecha.setText(null);
     }
 }

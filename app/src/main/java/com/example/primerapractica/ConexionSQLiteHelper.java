@@ -13,7 +13,7 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
     public ConexionSQLiteHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
-
+    //se ejecuata cuando hay que crear la base de datos y crea las dos tablas usuario y libro
     @Override
     public void onCreate(SQLiteDatabase db) {
 
@@ -21,6 +21,7 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
         db.execSQL(Utilidades.CREAR_TABLA_LIBRO);
     }
 
+    //se ejecuta cuando la version de la BD que queremos usar y la que existe no coinciden
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop table if exists "+Utilidades.TABLA_USUARIO);

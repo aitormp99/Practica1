@@ -1,7 +1,9 @@
 package com.example.primerapractica.utilidades;
 
 public class Utilidades {
+
     //constantes campos tabla usuario
+
     //Tabla Usuario
     public static final String TABLA_USUARIO="usuario";
     public static final String CAMPO_USUARIO="id";

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lista">
+    tools:context=".MenuLibro">
 
     <Button
         android:id="@+id/botonAñadirLibro"
@@ -17,4 +17,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.778" />
+
+    <Button
+        android:id="@+id/buttonVerListaLibros"
+        android:layout_width="259dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="44dp"
+        android:text="Ver lista libros "
+        app:layout_constraintBottom_toTopOf="@+id/botonAñadirLibro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
