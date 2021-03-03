@@ -15,10 +15,10 @@ import com.example.primerapractica.utilidades.Utilidades;
 
 public class ActualizarEliminar extends AppCompatActivity {
 
-    TextView textView1, textView2;
-    EditText campoId, campoNombre, campoApellido, campoContrasena;
-    ConexionSQLiteHelper conn;
-    Button botonBorrar, botonRegresar, botonActulizar;
+    private TextView textView1, textView2;
+    private EditText campoId, campoNombre, campoApellido, campoContrasena;
+    private ConexionSQLiteHelper conn;
+    private Button botonBorrar, botonRegresar, botonActulizar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -16,8 +16,8 @@ import com.example.primerapractica.utilidades.Utilidades;
 import java.sql.SQLData;
 
 public class Registro extends AppCompatActivity {
-    EditText campoId, campoNombre, campoApellido, campoContrasena;
-    Button botonRegistro, botonRegresar;
+    private EditText campoId, campoNombre, campoApellido, campoContrasena;
+    private Button botonRegistro, botonRegresar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,9 +1,18 @@
 package com.example.primerapractica;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,8 +23,11 @@ import com.example.primerapractica.utilidades.Utilidades;
 
 public class InsertarLibro extends AppCompatActivity {
 
-    EditText  campoNombre, campoAutor, campoFecha;
-    Button botonRegistro, botonRegresar;
+    private EditText  campoNombre, campoAutor, campoFecha;
+    private Button botonRegistro, botonRegresar;
+    private PendingIntent pendingIntent;
+    private final static  String CHANNEL_ID = "IdCanal" ;
+    private final static int NOTIFICACION_ID = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +72,7 @@ public class InsertarLibro extends AppCompatActivity {
                     " ( "+Utilidades.CAMPO_NOMBRE_LIBRO+","+ Utilidades.CAMPO_AUTOR+","+Utilidades.CAMPO_LANZAMIENTO+
                     ") values ('"+campoNombre.getText().toString()+"' ,'"+campoAutor.getText().toString()+"', '"+campoFecha.getText().toString()+"' )";
             db.execSQL(insert);
-            Toast.makeText(getApplicationContext(),"Libro añadido correctamente",Toast.LENGTH_LONG).show();
+            createNotificacion();
             limpiar();
             db.close();
         }catch (Exception e){
@@ -70,6 +82,28 @@ public class InsertarLibro extends AppCompatActivity {
 
 
     }
+
+    //metodo para crear una notificacion local al insertar un libro correctamente
+    private void createNotificacion() {
+
+        NotificationManager elManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        NotificationCompat.Builder builder= new NotificationCompat.Builder(getApplicationContext(),CHANNEL_ID);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel elCanal = new NotificationChannel(CHANNEL_ID, "NombreCanal",
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            elManager.createNotificationChannel(elCanal);
+        }
+        builder.setSmallIcon(R.drawable.ic_baseline_menu_book_24);
+        builder.setContentTitle("Notificacion Local");
+        builder.setContentText("Libro con nombre "+campoNombre.getText().toString()+" añadido ");
+        builder.setColor(Color.BLACK);
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        builder.setLights(Color.WHITE,1000,1000);
+
+        elManager.notify(NOTIFICACION_ID, builder.build());
+    }
+
     //metodo que limpia los campos de los editText actividad
     private void limpiar() {
 

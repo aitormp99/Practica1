@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button botonRegistro, botonLogin, botonActualizarEliminar;
+    private Button botonRegistro, botonLogin, botonActualizarEliminar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
