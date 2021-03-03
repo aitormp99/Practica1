@@ -52,7 +52,7 @@ public class Registro extends AppCompatActivity {
     //metodo para insertar un usuario en la tabla usuario
     private void registrarUsuarios(){
 
-        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"db_usuarios",null,1);
+        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"bd_usuarios",null,1);
         SQLiteDatabase db= conn.getWritableDatabase();
 
         try {

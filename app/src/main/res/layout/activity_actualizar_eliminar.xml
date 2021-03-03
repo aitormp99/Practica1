@@ -68,23 +68,23 @@
 
     <Button
         android:id="@+id/buttonBorrar"
-        android:layout_width="181dp"
-        android:layout_height="67dp"
+        android:layout_width="162dp"
+        android:layout_height="57dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="84dp"
         android:text="Borrar Usuario"
         app:layout_constraintBottom_toTopOf="@+id/botonRegresar"
         app:layout_constraintEnd_toStartOf="@+id/buttonActualizar"
-        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextContraseña"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.037"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/botonRegresar"
-        android:layout_width="387dp"
-        android:layout_height="61dp"
+        android:layout_width="324dp"
+        android:layout_height="52dp"
         android:layout_marginBottom="52dp"
         android:text="Regresar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,13 +95,13 @@
 
     <Button
         android:id="@+id/buttonActualizar"
-        android:layout_width="181dp"
-        android:layout_height="67dp"
+        android:layout_width="157dp"
+        android:layout_height="58dp"
         android:layout_marginTop="84dp"
         android:text="Actualizar Usuario"
         app:layout_constraintBottom_toTopOf="@+id/botonRegresar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintHorizontal_bias="0.921"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextContraseña"
         app:layout_constraintVertical_bias="0.0" />

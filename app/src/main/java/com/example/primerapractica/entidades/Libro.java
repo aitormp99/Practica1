@@ -17,6 +17,12 @@ public class Libro implements Serializable {
         Autor = autor;
         this.lanzamiento = fecha;
     }
+
+    public Libro() {
+
+    }
+
+
     //metodo obtener id
     public Integer getId() {
         return id;

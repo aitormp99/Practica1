@@ -62,7 +62,7 @@ public class InsertarLibro extends AppCompatActivity {
     //metodo que inserta un nuevo libro en la tabla libro
     private void registrarUsuarios(){
 
-        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"db_usuarios",null,1);
+        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"bd_usuarios",null,1);
         SQLiteDatabase db= conn.getWritableDatabase();
 
         try {

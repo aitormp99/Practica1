@@ -21,48 +21,53 @@ import java.util.List;
 
 public class ListaLibros extends AppCompatActivity {
 
-    private AppCompatActivity activity = ListaLibros.this;
+
     private TextView textViewNombre;
     private RecyclerView recyclerViewlibro;
-    private List<Libro> listaLibro;
-    private LibroRecyclerAdapter LibroRecyclerAdapter;
+    private ArrayList<Libro> listaLibro;
+
+
+    private ConexionSQLiteHelper conn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_libros);
 
+        conn =  new ConexionSQLiteHelper(this,"bd_usuarios",null,1);
+
+        listaLibro= new ArrayList<>();
+
         textViewNombre = findViewById(R.id.textTitulo);
-        recyclerViewlibro = (RecyclerView) findViewById(R.id.recyclerViewLibro);
 
-        listaLibro = new ArrayList<>();
-        LibroRecyclerAdapter = new LibroRecyclerAdapter(listaLibro);
-        RecyclerView.LayoutManager lm = new LinearLayoutManager(getApplicationContext());
-        recyclerViewlibro.setLayoutManager(lm);
-        recyclerViewlibro.setItemAnimator(new DefaultItemAnimator());
-        recyclerViewlibro.setHasFixedSize(true);
-        recyclerViewlibro.setAdapter(LibroRecyclerAdapter);
+        recyclerViewlibro = (RecyclerView) findViewById(R.id.recyclerLibro);
 
-        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this, "db_usuarios", null, 1);
-        getDataFromSQLite();
+        recyclerViewlibro.setLayoutManager(new LinearLayoutManager(this));
+
+        consultarListaLibros();
+
+        LibroRecyclerAdapter adapter = new LibroRecyclerAdapter(listaLibro);
+        recyclerViewlibro.setAdapter(adapter);
+
+
     }
 
-    private void getDataFromSQLite() {
-        // AsyncTask is used that SQLite operation not blocks the UI Thread.
-        new AsyncTask<Void, Void, Void>() {
-            @SuppressLint("StaticFieldLeak")
-            @Override
-            protected Void doInBackground(Void... params) {
+    private void consultarListaLibros() {
+        SQLiteDatabase db = conn.getReadableDatabase();
 
+        Libro libro = null;
 
-                return null;
-            }
+        Cursor cursor = db.rawQuery("select * from "+Utilidades.TABLA_LIBRO,null);
 
-            @Override
-            protected void onPostExecute(Void aVoid) {
-                super.onPostExecute(aVoid);
-                LibroRecyclerAdapter.notifyDataSetChanged();
-            }
-        }.execute();
+        while (cursor.moveToNext()){
+            libro = new Libro();
+            libro.setNombre(cursor.getString(1));
+            libro.setAutor(cursor.getString(2));
+            libro.setFecha(cursor.getString(3));
+
+            listaLibro.add(libro);
+        }
     }
+
+
 }

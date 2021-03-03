@@ -63,7 +63,7 @@ public class LoginDialog extends AppCompatDialogFragment {
 
     //metodo el cual comprueba si el usuario o la contraseña coinciden
     public Boolean loginUsuario(){
-        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(getContext(),"db_usuarios",null,1);
+        ConexionSQLiteHelper conn = new ConexionSQLiteHelper(getContext(),"bd_usuarios",null,1);
         SQLiteDatabase db= conn.getWritableDatabase();
         String[] parametros ={usuario.getText().toString(),contrasena.getText().toString()};
 

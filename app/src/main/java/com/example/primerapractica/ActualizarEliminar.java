@@ -37,7 +37,7 @@ public class ActualizarEliminar extends AppCompatActivity {
         botonActulizar =findViewById(R.id.buttonActualizar);
         botonRegresar=findViewById(R.id.botonRegresar);
 
-        conn = new ConexionSQLiteHelper(this,"db_usuarios",null,1);
+        conn = new ConexionSQLiteHelper(this,"bd_usuarios",null,1);
 
         //boton que ejecuta eliminarUsuario()
         botonBorrar.setOnClickListener(new View.OnClickListener() {
