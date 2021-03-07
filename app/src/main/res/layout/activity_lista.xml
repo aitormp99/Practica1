@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778" />
+        app:layout_constraintVertical_bias="0.877" />
 
     <Button
         android:id="@+id/buttonVerListaLibros"
@@ -29,4 +29,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/botonMapa"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:drawableLeft="@drawable/ic_baseline_map_24"
+        android:text="Ver mapa"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVerListaLibros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.913" />
+
+    <EditText
+        android:id="@+id/editCoordenadas"
+        android:layout_width="195dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="coordenadas"
+        android:inputType="textPersonName"
+        android:text="43.263700, -2.950819"
+        app:layout_constraintBottom_toTopOf="@+id/buttonVerListaLibros"
+        app:layout_constraintEnd_toStartOf="@+id/botonMapa"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
 </androidx.constraintlayout.widget.ConstraintLayout>
