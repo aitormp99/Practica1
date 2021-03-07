@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PrimeraPractica</string>
+    <string name="textoModificarActualizar">User to delete or modify</string>
+    <string name="nombreUsuario">Username</string>
+    <string name="camposActualizar">" Fields to fill in to update"</string>
+    <string name="campoNombre">Name</string>
+    <string name="campoApellido">" Surname"</string>
+    <string name="campoContraseña">Password</string>
+    <string name="botonBorrar">Delete user</string>
+    <string name="botonActualizar">Update user</string>
+    <string name="botonRegrasar">Return</string>
+    <string name="botonAgregarLibro">Add Book</string>
+    <string name="campoNombreLibro">Book name</string>
+    <string name="campoNombreAutor">Author Name</string>
+    <string name="campoFechaLanzamiento">" Release Date (YYYY-MM-DD)"</string>
+    <string name="campoCoordenadas">"Coordinates "</string>
+    <string name="botonVerMapa">" See map"</string>
+    <string name="botonVerListaLibros">" See book list"</string>
+    <string name="botonAñadirLibro">" Add Book"</string>
+    <string name="EtiquetaListaLibros">" List of books:"</string>
+    <string name="botonLogin">Login</string>
+    <string name="botonRegistrarte">" Sign up"</string>
+    <string name="botonActualizarBorrar">" Update or delete user"</string>
+    <string name="TextoFechaLanzamiento">" Release date:"</string>
+    <string name="TextoNombreAutor">Author name:</string>
+    <string name="TextoNombreLibro">" Book name:"</string>
+    <string name="botonAceptar">OK</string>
+    <string name="botonCancelar">Cancel</string>
+    <string name="NotificacionActualizacion">User updated successfully</string>
+    <string name="ErrorNoExiste">User does not exist</string>
+    <string name="NotificacionBorrado">User deleted successfully</string>
+    <string name="ErrorCampoIncorrecto">Some field is wrong</string>
+    <string name="NotificacionLocal">Local Notification</string>
+    <string name="TextoNotificacion1">Book with name</string>
+    <string name="TextoNotificacion2">added</string>
+    <string name="ErrorLogin">Incorrect username or password</string>
+    <string name="UsusarioAñadidoCorrectamente">User added successfully</string>
+    <string name="idRepetido">The id is repeated</string>
+</resources>

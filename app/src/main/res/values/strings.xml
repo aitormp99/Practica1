@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">PrimeraPractica</string>
+    <string name="textoModificarActualizar">Usuario a modificar o eliminar</string>
+    <string name="nombreUsuario">Nombre Usuario</string>
+    <string name="camposActualizar">Campos a rellenar para actualizar</string>
+    <string name="campoNombre">Nombre</string>
+    <string name="campoApellido">Apellido</string>
+    <string name="campoContraseña">Contraseña</string>
+    <string name="botonBorrar">Borrar usuario</string>
+    <string name="botonActualizar">Actualizar usuario</string>
+    <string name="botonRegrasar">Regresar</string>
+    <string name="botonAgregarLibro">Agregar Libro</string>
+    <string name="campoNombreLibro">Nombre Libro</string>
+    <string name="campoNombreAutor">Nombre Autor</string>
+    <string name="campoFechaLanzamiento">Fecha Lanzamiento (YYYY-MM-DD)</string>
+    <string name="campoCoordenadas">Coordenadas</string>
+    <string name="botonVerMapa">Ver Mapa</string>
+    <string name="botonVerListaLibros">Ver lista libros</string>
+    <string name="botonAñadirLibro">Añadir Libro</string>
+    <string name="EtiquetaListaLibros">Lista de libros:</string>
+    <string name="botonLogin">Acceder</string>
+    <string name="botonRegistrarte">Registrate</string>
+    <string name="botonActualizarBorrar">Acualizar o eliminar usuario</string>
+    <string name="TextoFechaLanzamiento">Fecha lanzamiento:</string>
+    <string name="TextoNombreAutor">Nombre autor:</string>
+    <string name="TextoNombreLibro">Nombre libro:</string>
+    <string name="botonAceptar">Aceptar</string>
+    <string name="botonCancelar">Cancelar</string>
+    <string name="NotificacionActualizacion">Usuario actualizado correctamente</string>
+    <string name="ErrorNoExiste">Usuario no existe</string>
+    <string name="NotificacionBorrado">Usuario borrado correctamente</string>
+    <string name="ErrorCampoIncorrecto">Algun Campo es incorrecto</string>
+    <string name="NotificacionLocal">Notificacion Local</string>
+    <string name="TextoNotificacion1">Libro con nombre </string>
+    <string name="TextoNotificacion2"> añadido </string>
+    <string name="ErrorLogin"> Nombre de usuario o contraseña incorrecta </string>
+    <string name="UsusarioAñadidoCorrectamente"> Usuario añadido correctamente </string>
+    <string name="idRepetido"> El id esta repetido </string>
+
+
+
+
+
 </resources>

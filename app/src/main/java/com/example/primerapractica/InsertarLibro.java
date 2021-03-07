@@ -76,7 +76,7 @@ public class InsertarLibro extends AppCompatActivity {
             limpiar();
             db.close();
         }catch (Exception e){
-            Toast.makeText(getApplicationContext(),"Algun Campo es incorrecto",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),R.string.ErrorCampoIncorrecto,Toast.LENGTH_LONG).show();
             limpiar();
         }
 

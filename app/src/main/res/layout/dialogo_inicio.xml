@@ -22,7 +22,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="4dp"
         android:layout_marginBottom="4dp"
-        android:hint="Nombre Usuario" />
+        android:hint="@string/nombreUsuario" />
 
     <EditText
         android:id="@+id/contrasena"
@@ -34,6 +34,6 @@
         android:layout_marginRight="4dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif"
-        android:hint="Contraseña"
+        android:hint="@string/campoContraseña"
         android:inputType="textPassword" />
 </LinearLayout>

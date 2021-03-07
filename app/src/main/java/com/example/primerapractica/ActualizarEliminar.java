@@ -77,11 +77,11 @@ public class ActualizarEliminar extends AppCompatActivity {
                     " set "+Utilidades.CAMPO_NOMBRE+" = '"+campoNombre.getText().toString()+"',"+Utilidades.CAMPO_APELLIDO+" = '"+campoApellido.getText().toString()+"',"+Utilidades.CAMPO_CONTRASENA+" = '"+campoContrasena.getText().toString()
                     +"' where "+Utilidades.CAMPO_USUARIO+" = '"+campoId.getText().toString()+"'";
             db.execSQL(update);
-            Toast.makeText(getApplicationContext(),"Usuario modificado correctamente",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),R.string.NotificacionActualizacion,Toast.LENGTH_LONG).show();
             limpiar();
             db.close();
         }catch (Exception e){
-            Toast.makeText(getApplicationContext(),"Usuario no existe",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),R.string.ErrorNoExiste,Toast.LENGTH_LONG).show();
             limpiar();
         }
 
@@ -94,11 +94,11 @@ public class ActualizarEliminar extends AppCompatActivity {
 
             String delete ="delete from "+Utilidades.TABLA_USUARIO+" where "+Utilidades.CAMPO_USUARIO+" = '"+campoId.getText().toString()+"'";
             db.execSQL(delete);
-            Toast.makeText(getApplicationContext(),"Usuario borrado correctamente",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),R.string.NotificacionBorrado,Toast.LENGTH_LONG).show();
             limpiar();
             db.close();
         }catch (Exception e){
-            Toast.makeText(getApplicationContext(),"Usuario no existe",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),R.string.ErrorNoExiste,Toast.LENGTH_LONG).show();
             limpiar();
         }
     }

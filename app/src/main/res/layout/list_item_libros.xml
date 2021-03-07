@@ -23,11 +23,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre Libro:"
-                android:textStyle="bold"/>
+                android:text="@string/TextoNombreLibro"
+                android:textStyle="bold" />
             <TextView
                 android:id="@+id/textNombre"
                 android:layout_width="wrap_content"
@@ -44,7 +45,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Autor:"
+                android:text="@string/TextoNombreAutor"
                 android:textStyle="bold" />
 
             <TextView
@@ -59,11 +60,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lanzamiento:"
-                android:textStyle="bold"/>
+                android:text="@string/TextoFechaLanzamiento"
+                android:textStyle="bold" />
             <TextView
                 android:id="@+id/textLanzamiento"
                 android:layout_width="wrap_content"

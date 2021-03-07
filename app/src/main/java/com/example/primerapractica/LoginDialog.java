@@ -31,12 +31,12 @@ public class LoginDialog extends AppCompatDialogFragment {
 
         builder.setView(view)
                 //al pulsar cancelar cierra el dialogo
-                .setNegativeButton("cancelar", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.botonCancelar, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
                     }
-                }).setPositiveButton("aceptar", new DialogInterface.OnClickListener() {
+                }).setPositiveButton(R.string.botonAceptar, new DialogInterface.OnClickListener() {
             @Override
 
             //si el usuario y contraseña son correctos abre la actividad MenuLibro
@@ -46,7 +46,7 @@ public class LoginDialog extends AppCompatDialogFragment {
                     Intent lista = new Intent(getContext(), MenuLibro.class);
                     startActivity(lista);
                 }else{
-                    Toast.makeText(getContext(),"Nombre de usuario o contraseña incorrecta",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getContext(),R.string.ErrorLogin,Toast.LENGTH_LONG).show();
                 }
 
 

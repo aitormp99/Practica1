@@ -10,7 +10,7 @@
         android:id="@+id/textTitulo"
         android:layout_width="156dp"
         android:layout_height="31dp"
-        android:text="Lista de libros:"
+        android:text="@string/EtiquetaListaLibros"
         android:textSize="20sp"
 
         android:textStyle="bold"

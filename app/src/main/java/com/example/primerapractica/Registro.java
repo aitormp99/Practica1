@@ -62,11 +62,11 @@ public class Registro extends AppCompatActivity {
                     " ( "+Utilidades.CAMPO_USUARIO+","+Utilidades.CAMPO_NOMBRE+","+ Utilidades.CAMPO_APELLIDO+","+Utilidades.CAMPO_CONTRASENA+
                     ") values ('"+campoId.getText().toString()+"', '"+campoNombre.getText().toString()+"' ,'"+campoApellido.getText().toString()+"', '"+campoContrasena.getText().toString()+"' )";
             db.execSQL(insert);
-            Toast.makeText(getApplicationContext(),"Usuario añadido correctamente",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),R.string.UsusarioAñadidoCorrectamente,Toast.LENGTH_LONG).show();
             limpiar();
             db.close();
         }catch (Exception e){
-            Toast.makeText(getApplicationContext(),"El id esta repetido",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),R.string.idRepetido,Toast.LENGTH_LONG).show();
             limpiar();
         }
 
