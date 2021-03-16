@@ -1,5 +1,6 @@
 package com.example.primerapractica;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
@@ -59,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), Preferencias.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -90,10 +92,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+    }
+    private void reload(){
+        Intent intent = new Intent(getIntent());
+        intent.putExtra("pref",true);
+        startActivity(intent);
+        finish();
+    }
     //metodo que abre el dialogo Login
     public void openDialog(){
 
         LoginDialog ld = new LoginDialog();
         ld.show(getSupportFragmentManager(),"login dialog");
     }
+
 }

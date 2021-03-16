@@ -9,7 +9,6 @@ import android.os.Bundle;
 public class Preferencias extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +25,13 @@ public class Preferencias extends AppCompatActivity {
         Intent intent = new Intent();
         intent.putExtra("tarea",'b');
         setResult(RESULT_OK,intent);
-        finish();
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent register = new Intent(getBaseContext(),MainActivity.class);
+        startActivity(register);
     }
 }

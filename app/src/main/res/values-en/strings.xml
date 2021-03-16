@@ -37,4 +37,5 @@
     <string name="ErrorLogin">Incorrect username or password</string>
     <string name="UsusarioAñadidoCorrectamente">User added successfully</string>
     <string name="idRepetido">The id is repeated</string>
+    <string name="ajustes">options</string>
 </resources>

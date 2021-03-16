@@ -36,6 +36,7 @@
     <string name="ErrorLogin"> Nombre de usuario o contraseña incorrecta </string>
     <string name="UsusarioAñadidoCorrectamente"> Usuario añadido correctamente </string>
     <string name="idRepetido"> El id esta repetido </string>
+    <string name="ajustes"> Ajustes </string>
 
 
 </resources>

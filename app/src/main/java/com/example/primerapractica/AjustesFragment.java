@@ -61,7 +61,7 @@ public class AjustesFragment extends PreferenceFragmentCompat implements SharedP
             editor.putString("tema",tema.getValue());
 
         }
-
+        reiniciar();
         editor.apply();
         reiniciar();
     }

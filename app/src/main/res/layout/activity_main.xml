@@ -61,7 +61,7 @@
         android:layout_width="218dp"
         android:layout_height="51dp"
         android:layout_marginTop="16dp"
-        android:text="Ajustes"
+        android:text="@string/ajustes"
         android:drawableLeft="@drawable/ic_baseline_settings_24"
         app:layout_constraintBottom_toTopOf="@+id/botonActualizarEliminar"
         app:layout_constraintEnd_toEndOf="parent"
