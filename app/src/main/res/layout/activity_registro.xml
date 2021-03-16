@@ -10,82 +10,82 @@
     <EditText
 
         android:id="@+id/TextId"
-        android:layout_width="319dp"
-        android:layout_height="59dp"
+        style="@style/editTexTBlanco"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:hint="@string/nombreUsuario"
-        style="@style/editTexTBlanco"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/TextNombre"
-        app:layout_constraintEnd_toEndOf="@+id/TextNombre"
-        app:layout_constraintHorizontal_bias="0.554"
-        app:layout_constraintStart_toStartOf="@+id/TextNombre"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.819" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        style="@style/editTexTBlanco"
         android:id="@+id/TextApellido"
-        android:layout_width="316dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="16dp"
+        style="@style/editTexTBlanco"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:hint="@string/campoApellido"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/TextContraseña"
-        app:layout_constraintEnd_toEndOf="@+id/TextContraseña"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="@+id/TextContraseña" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextNombre" />
+
+    <Button
+        android:id="@+id/botonRegresar"
+        style="@style/botones"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:text="@string/botonRegrasar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegistrate" />
+
+    <Button
+        android:id="@+id/buttonRegistrate"
+        style="@style/botones"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:text="@string/botonRegistrarte"
+        app:layout_constraintBottom_toTopOf="@+id/botonRegresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextContraseña" />
 
     <EditText
         android:id="@+id/TextContraseña"
-        android:layout_width="322dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="48dp"
-        android:ems="10"
         style="@style/editTexTBlanco"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
+        android:ems="10"
         android:hint="@string/campoContraseña"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/buttonRegistrate"
-        app:layout_constraintEnd_toEndOf="@+id/buttonRegistrate"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="@+id/buttonRegistrate" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextApellido" />
 
     <EditText
-        style="@style/editTexTBlanco"
         android:id="@+id/TextNombre"
-        android:layout_width="317dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="16dp"
+        style="@style/editTexTBlanco"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:hint="@string/campoNombre"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/TextApellido"
-        app:layout_constraintEnd_toEndOf="@+id/TextApellido"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="@+id/TextApellido" />
-
-    <Button
-        android:id="@+id/buttonRegistrate"
-        android:layout_width="330dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="248dp"
-        android:text="@string/botonRegistrarte"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/botonRegresar"
-        app:layout_constraintHorizontal_bias="0.378"
-        style="@style/botones"
-        app:layout_constraintStart_toStartOf="@+id/botonRegresar" />
-
-    <Button
-        android:id="@+id/botonRegresar"
-        android:layout_width="320dp"
-        android:layout_height="61dp"
-        android:text="@string/botonRegrasar"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        style="@style/botones"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRegistrate" />
+        app:layout_constraintTop_toBottomOf="@+id/TextId" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

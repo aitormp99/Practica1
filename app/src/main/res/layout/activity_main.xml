@@ -8,64 +8,61 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/ajustes"
+        style="@style/botones"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:drawableLeft="@drawable/ic_baseline_settings_24"
+        android:text="@string/ajustes"
+        app:layout_constraintBottom_toTopOf="@+id/botonActualizarEliminar"
+        app:layout_constraintEnd_toEndOf="@+id/botonActualizarEliminar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/botonActualizarEliminar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegistro" />
+
+    <Button
         android:id="@+id/buttonRegistro"
-        android:layout_width="220dp"
-        android:layout_height="58dp"
+        style="@style/botones"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
         android:text="@string/botonRegistrarte"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.622"
-        style="@style/botones"/>
-
-    <Button
-        style="@style/botones"
-        android:id="@+id/botonLogin"
-        android:layout_width="216dp"
-        android:layout_height="60dp"
-        android:text="@string/botonLogin"
-        app:layout_constraintBottom_toTopOf="@+id/buttonRegistro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.861" />
-
-    <Button
-        android:id="@+id/botonActualizarEliminar"
-        style="@style/botones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/botonActualizarBorrar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRegistro"
-        app:layout_constraintVertical_bias="0.519" />
+        app:layout_constraintBottom_toTopOf="@+id/ajustes"
+        app:layout_constraintEnd_toEndOf="@+id/ajustes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/ajustes"
+        app:layout_constraintTop_toBottomOf="@+id/botonLogin" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="247dp"
         android:layout_height="216dp"
         app:layout_constraintBottom_toTopOf="@+id/botonLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/botonLogin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/botonLogin"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_supervised_user_circle_24" />
 
     <Button
-        android:id="@+id/ajustes"
+        android:id="@+id/botonLogin"
         style="@style/botones"
-        android:layout_width="218dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/ajustes"
-        android:drawableLeft="@drawable/ic_baseline_settings_24"
-        app:layout_constraintBottom_toTopOf="@+id/botonActualizarEliminar"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:text="@string/botonLogin"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistro"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegistro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/botonActualizarEliminar"
+        style="@style/botones"
+        android:layout_width="254dp"
+        android:layout_height="55dp"
+        android:text="@string/botonActualizarBorrar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRegistro" />
+        app:layout_constraintTop_toBottomOf="@+id/ajustes" />
 </androidx.constraintlayout.widget.ConstraintLayout>

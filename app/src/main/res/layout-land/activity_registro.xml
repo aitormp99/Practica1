@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pizarra"
+    tools:context=".Registro">
+
+    <EditText
+
+        android:id="@+id/TextId"
+        style="@style/editTexTBlanco"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/nombreUsuario"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/TextApellido"
+        app:layout_constraintEnd_toStartOf="@+id/TextNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRegistrate"
+        style="@style/botones"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginBottom="85dp"
+        android:text="@string/botonRegistrarte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonRegresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextApellido" />
+
+    <EditText
+        android:id="@+id/TextApellido"
+        style="@style/editTexTBlanco"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/campoApellido"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistrate"
+        app:layout_constraintEnd_toStartOf="@+id/TextContraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextId" />
+
+    <EditText
+        android:id="@+id/TextContraseña"
+        style="@style/editTexTBlanco"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/campoContraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/botonRegresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TextApellido"
+        app:layout_constraintTop_toBottomOf="@+id/TextNombre" />
+
+    <EditText
+        android:id="@+id/TextNombre"
+        style="@style/editTexTBlanco"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/campoNombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/TextContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TextId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonRegresar"
+        style="@style/botones"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="85dp"
+        android:text="@string/botonRegrasar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonRegistrate"
+        app:layout_constraintTop_toBottomOf="@+id/TextContraseña" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

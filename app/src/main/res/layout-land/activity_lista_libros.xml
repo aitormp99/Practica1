@@ -13,20 +13,20 @@
         android:layout_width="265dp"
         android:layout_height="29dp"
         android:text="@string/EtiquetaListaLibros"
-        android:textSize="20sp"
+        android:textSize="16sp"
 
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recyclerLibro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
 
         android:id="@+id/recyclerLibro"
-        android:layout_width="301dp"
-        android:layout_height="398dp"
+        android:layout_width="456dp"
+        android:layout_height="158dp"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toTopOf="@+id/botonRegresar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,14 +35,12 @@
 
     <Button
         android:id="@+id/botonRegresar"
-
         style="@style/botones"
-        android:layout_width="258dp"
-        android:layout_height="46dp"
+        android:layout_width="303dp"
+        android:layout_height="45dp"
         android:text="@string/botonRegrasar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerLibro" />
 

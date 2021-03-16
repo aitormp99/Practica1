@@ -8,69 +8,69 @@
     tools:context=".InsertarLibro">
 
     <EditText
-        style="@style/editTexTBlanco"
         android:id="@+id/textLibro"
-        android:layout_width="322dp"
-        android:layout_height="47dp"
+        style="@style/editTexTBlanco"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:hint="@string/campoNombreLibro"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/textAutor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintEnd_toEndOf="@+id/textAutor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textAutor"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        style="@style/editTexTBlanco"
         android:id="@+id/textAutor"
-        android:layout_width="322dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="84dp"
+        style="@style/editTexTBlanco"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:hint="@string/campoNombreAutor"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/textFecha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/textFecha"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textFecha"
+        app:layout_constraintTop_toBottomOf="@+id/textLibro" />
 
     <EditText
-        style="@style/editTexTBlanco"
         android:id="@+id/textFecha"
-        android:layout_width="314dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="68dp"
+        style="@style/editTexTBlanco"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
         android:ems="10"
         android:hint="@string/campoFechaLanzamiento"
         android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/botonLibro"
-        app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/botonLibro"
+        app:layout_constraintEnd_toEndOf="@+id/botonLibro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/botonLibro"
+        app:layout_constraintTop_toBottomOf="@+id/textAutor" />
 
     <Button
         android:id="@+id/botonLibro"
-        android:layout_width="361dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="436dp"
-        android:text="@string/botonAgregarLibro"
         style="@style/botones"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:text="@string/botonAgregarLibro"
+        app:layout_constraintBottom_toTopOf="@+id/botonRegresar2"
+        app:layout_constraintEnd_toEndOf="@+id/botonRegresar2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/botonRegresar2"
+        app:layout_constraintTop_toBottomOf="@+id/textFecha" />
 
     <Button
         android:id="@+id/botonRegresar2"
-        android:layout_width="362dp"
-        android:layout_height="62dp"
-        android:text="@string/botonRegrasar"
         style="@style/botones"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:text="@string/botonRegrasar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonLibro"
-        app:layout_constraintVertical_bias="0.386" />
+        app:layout_constraintTop_toBottomOf="@+id/botonLibro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

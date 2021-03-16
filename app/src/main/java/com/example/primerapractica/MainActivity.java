@@ -93,16 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
 
-    }
-    private void reload(){
-        Intent intent = new Intent(getIntent());
-        intent.putExtra("pref",true);
-        startActivity(intent);
-        finish();
-    }
     //metodo que abre el dialogo Login
     public void openDialog(){
 

@@ -31,12 +31,12 @@
     <string name="NotificacionBorrado">Usuario borrado correctamente</string>
     <string name="ErrorCampoIncorrecto">Algun Campo es incorrecto</string>
     <string name="NotificacionLocal">Notificacion Local</string>
-    <string name="TextoNotificacion1">Libro con nombre </string>
-    <string name="TextoNotificacion2"> añadido </string>
-    <string name="ErrorLogin"> Nombre de usuario o contraseña incorrecta </string>
-    <string name="UsusarioAñadidoCorrectamente"> Usuario añadido correctamente </string>
-    <string name="idRepetido"> El id esta repetido </string>
-    <string name="ajustes"> Ajustes </string>
+    <string name="TextoNotificacion1">Libro con nombre</string>
+    <string name="TextoNotificacion2">añadido</string>
+    <string name="ErrorLogin">Nombre de usuario o contraseña incorrecta</string>
+    <string name="UsusarioAñadidoCorrectamente">Usuario añadido correctamente</string>
+    <string name="idRepetido">El id esta repetido</string>
+    <string name="ajustes">Ajustes</string>
 
 
 </resources>
