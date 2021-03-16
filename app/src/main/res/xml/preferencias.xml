@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="PERSONALIZAR">
+        <ListPreference
+            android:key="tema"
+            android:title="Tema"
+            android:summary="Elije el color del tema"
+            android:entries="@array/temas"
+            android:icon="@drawable/ic_baseline_change_circle_24"
+            android:entryValues="@array/temas" />
+    </PreferenceCategory>
+    <ListPreference
+        android:key="idioma"
+        android:title="Idioma"
+        android:summary="Elije el idioma"
+        android:icon="@drawable/ic_baseline_language_24"
+        android:entries="@array/idiomas_str"
+        android:entryValues="@array/idiomas_value" />
+
+</PreferenceScreen>

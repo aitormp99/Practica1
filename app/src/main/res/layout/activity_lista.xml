@@ -4,25 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pizarra"
     tools:context=".MenuLibro">
 
     <Button
+
         android:id="@+id/botonAñadirLibro"
-        android:layout_width="280dp"
-        android:layout_height="63dp"
+        android:layout_width="279dp"
+        android:layout_height="49dp"
         android:text="@string/botonAñadirLibro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        style="@style/botones"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.877" />
+        app:layout_constraintVertical_bias="0.746" />
 
     <Button
         android:id="@+id/buttonVerListaLibros"
-        android:layout_width="259dp"
-        android:layout_height="54dp"
+        android:layout_width="279dp"
+        android:layout_height="49dp"
         android:layout_marginBottom="44dp"
+        style="@style/botones"
         android:text="@string/botonVerListaLibros"
         app:layout_constraintBottom_toTopOf="@+id/botonAñadirLibro"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,20 +35,22 @@
 
     <Button
         android:id="@+id/botonMapa"
+        style="@style/botones"
         android:layout_width="158dp"
         android:layout_height="48dp"
         android:drawableLeft="@drawable/ic_baseline_map_24"
         android:text="@string/botonVerMapa"
         app:layout_constraintBottom_toTopOf="@+id/buttonVerListaLibros"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintVertical_bias="0.913" />
+        app:layout_constraintVertical_bias="0.894" />
 
     <EditText
         android:id="@+id/editCoordenadas"
+        style="@style/editTexTBlanco"
         android:layout_width="195dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
@@ -55,8 +60,18 @@
         android:text="43.263700, -2.950819"
         app:layout_constraintBottom_toTopOf="@+id/buttonVerListaLibros"
         app:layout_constraintEnd_toStartOf="@+id/botonMapa"
-        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.911" />
+        app:layout_constraintVertical_bias="0.889" />
+
+    <Button
+        android:id="@+id/botonRegresar"
+        android:layout_width="279dp"
+        android:layout_height="49dp"
+        android:text="@string/botonRegrasar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/botones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonAñadirLibro" />
 </androidx.constraintlayout.widget.ConstraintLayout>

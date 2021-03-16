@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pizarra"
     tools:context=".Registro">
 
     <EditText
+
         android:id="@+id/TextId"
         android:layout_width="319dp"
         android:layout_height="59dp"
         android:ems="10"
         android:hint="@string/nombreUsuario"
+        style="@style/editTexTBlanco"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/TextNombre"
         app:layout_constraintEnd_toEndOf="@+id/TextNombre"
@@ -21,6 +24,7 @@
         app:layout_constraintVertical_bias="0.819" />
 
     <EditText
+        style="@style/editTexTBlanco"
         android:id="@+id/TextApellido"
         android:layout_width="316dp"
         android:layout_height="58dp"
@@ -39,15 +43,16 @@
         android:layout_height="62dp"
         android:layout_marginBottom="48dp"
         android:ems="10"
-
+        style="@style/editTexTBlanco"
         android:hint="@string/campoContraseña"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/buttonRegistrate"
         app:layout_constraintEnd_toEndOf="@+id/buttonRegistrate"
-        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="@+id/buttonRegistrate" />
 
     <EditText
+        style="@style/editTexTBlanco"
         android:id="@+id/TextNombre"
         android:layout_width="317dp"
         android:layout_height="60dp"
@@ -69,6 +74,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/botonRegresar"
         app:layout_constraintHorizontal_bias="0.378"
+        style="@style/botones"
         app:layout_constraintStart_toStartOf="@+id/botonRegresar" />
 
     <Button
@@ -79,6 +85,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        style="@style/botones"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegistrate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

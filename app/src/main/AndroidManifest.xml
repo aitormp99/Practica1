@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimeraPractica">
-        <activity android:name=".ActualizarEliminar"></activity>
+        <activity android:name=".Preferencias"></activity>
+        <activity android:name=".ActualizarEliminar" />
         <activity android:name=".ListaLibros" />
         <activity android:name=".InsertarLibro" />
         <activity android:name=".Registro" />

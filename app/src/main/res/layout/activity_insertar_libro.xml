@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pizarra"
     tools:context=".InsertarLibro">
 
     <EditText
+        style="@style/editTexTBlanco"
         android:id="@+id/textLibro"
         android:layout_width="322dp"
         android:layout_height="47dp"
@@ -20,6 +22,7 @@
         app:layout_constraintVertical_bias="0.497" />
 
     <EditText
+        style="@style/editTexTBlanco"
         android:id="@+id/textAutor"
         android:layout_width="322dp"
         android:layout_height="49dp"
@@ -32,6 +35,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
+        style="@style/editTexTBlanco"
         android:id="@+id/textFecha"
         android:layout_width="314dp"
         android:layout_height="52dp"
@@ -41,6 +45,7 @@
         android:inputType="date"
         app:layout_constraintBottom_toTopOf="@+id/botonLibro"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -49,6 +54,7 @@
         android:layout_height="58dp"
         android:layout_marginTop="436dp"
         android:text="@string/botonAgregarLibro"
+        style="@style/botones"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,6 +65,7 @@
         android:layout_width="362dp"
         android:layout_height="62dp"
         android:text="@string/botonRegrasar"
+        style="@style/botones"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"

@@ -1,9 +1,13 @@
 package com.example.primerapractica;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -14,12 +18,37 @@ import android.widget.Toast;
 import com.example.primerapractica.utilidades.Utilidades;
 
 import java.sql.SQLData;
+import java.util.Locale;
 
 public class Registro extends AppCompatActivity {
     private EditText campoId, campoNombre, campoApellido, campoContrasena;
     private Button botonRegistro, botonRegresar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        SharedPreferences sharedPreferences =  PreferenceManager.getDefaultSharedPreferences(this);
+
+        String idioma = sharedPreferences.getString("idioma","es");
+        String color =sharedPreferences.getString("tema","Por Defecto");
+
+        Locale nuevaloc = new Locale(idioma);
+        Locale.setDefault(nuevaloc);
+        Configuration config = new Configuration();
+        config.locale = nuevaloc;
+
+        getBaseContext().getResources().updateConfiguration(config,getBaseContext().getResources().getDisplayMetrics());
+
+        if (color.equals("Por Defecto")){
+            setTheme(R.style.PrimeraPracticaAqua);
+        }else if (color.equals("Amarillo")){
+            setTheme(R.style.PrimeraPracticaAmarillo);
+        }else if (color.equals("Celeste")){
+            setTheme(R.style.PrimeraPracticaAzul);
+        }else if (color.equals("Rojo")){
+            setTheme(R.style.PrimeraPracticaRojo);
+        }else if (color.equals("Verde")){
+            setTheme(R.style.PrimeraPracticaVerde);
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
 
@@ -43,8 +72,7 @@ public class Registro extends AppCompatActivity {
         botonRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent principal = new Intent(v.getContext(),MainActivity.class);
-                startActivity(principal);
+                 onBackPressed();
             }
         });
 
