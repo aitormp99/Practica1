@@ -15,7 +15,7 @@ import android.widget.EditText;
 import java.util.Locale;
 
 public class MenuLibro extends AppCompatActivity {
-    private Button añadirLibro, verListaLibros, abrirGoogleMaps, regresar;
+    private Button añadirLibro, verListaLibros, abrirGoogleMaps, regresar, notas;
     private EditText coordenadas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,13 +43,15 @@ public class MenuLibro extends AppCompatActivity {
             setTheme(R.style.PrimeraPracticaVerde);
         }
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_lista);
+
         coordenadas = findViewById(R.id.editCoordenadas);
         añadirLibro= findViewById(R.id.botonAñadirLibro);
         verListaLibros = findViewById(R.id.buttonVerListaLibros);
         abrirGoogleMaps = findViewById(R.id.botonMapa);
         regresar = findViewById(R.id.botonRegresar);
+        notas = findViewById(R.id.botonNotas);
+
         //boton que lleva a la actividad InsertarLibro
         añadirLibro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +79,13 @@ public class MenuLibro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 onBackPressed();
+            }
+        });
+        notas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(),Notas.class);
+                startActivity(intent);
             }
         });
 

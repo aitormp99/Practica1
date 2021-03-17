@@ -38,4 +38,5 @@
     <string name="UsusarioAñadidoCorrectamente">User added successfully</string>
     <string name="idRepetido">The id is repeated</string>
     <string name="ajustes">options</string>
+    <string name="notas">Notepad</string>
 </resources>

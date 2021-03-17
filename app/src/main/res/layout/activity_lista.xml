@@ -44,13 +44,13 @@
         app:layout_constraintEnd_toEndOf="@+id/editCoordenadas"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/editCoordenadas"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/botonNotas" />
 
     <EditText
         android:id="@+id/editCoordenadas"
         style="@style/editTexTBlanco"
-        android:layout_width="283dp"
-        android:layout_height="53dp"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
         android:ems="10"
         android:hint="@string/campoCoordenadas"
         android:inputType="textPersonName"
@@ -71,4 +71,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonAñadirLibro" />
+
+    <Button
+        android:id="@+id/botonNotas"
+        style="@style/botones"
+        android:layout_width="258dp"
+        android:layout_height="46dp"
+        android:text="@string/notas"
+
+        app:layout_constraintBottom_toTopOf="@+id/botonMapa"
+        app:layout_constraintEnd_toEndOf="@+id/botonMapa"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/botonMapa"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

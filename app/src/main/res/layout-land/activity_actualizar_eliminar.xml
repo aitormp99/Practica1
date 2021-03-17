@@ -12,143 +12,119 @@
         android:id="@+id/TextId"
         style="@style/editTexTBlanco"
 
-        android:layout_width="0dp"
+        android:layout_width="265dp"
         android:layout_height="43dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="57dp"
         android:ems="10"
         android:hint="@string/nombreUsuario"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/TextNombre"
-        app:layout_constraintEnd_toStartOf="@+id/buttonBorrar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/group" />
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/TextApellido"
         style="@style/editTexTBlanco"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="7dp"
+        android:layout_width="242dp"
+        android:layout_height="49dp"
         android:ems="10"
         android:hint="@string/campoApellido"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/buttonActualizar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/TextNombre"
+        app:layout_constraintBottom_toTopOf="@+id/botonRegresar"
+        app:layout_constraintEnd_toEndOf="@+id/botonRegresar"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/TextContraseña"
         style="@style/editTexTBlanco"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="18dp"
+        android:layout_width="179dp"
+        android:layout_height="43dp"
 
         android:ems="10"
         android:hint="@string/campoContraseña"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonActualizar"
-        app:layout_constraintEnd_toStartOf="@+id/buttonActualizar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonActualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextNombre"
         app:passwordToggleEnabled="true"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="103dp" />
 
     <EditText
         android:id="@+id/TextNombre"
         style="@style/editTexTBlanco"
-        android:layout_width="0dp"
+        android:layout_width="242dp"
         android:layout_height="43dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="18dp"
         android:ems="10"
         android:hint="@string/campoNombre"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/TextApellido"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonActualizar"
+        app:layout_constraintStart_toStartOf="@+id/TextContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/buttonBorrar"
         style="@style/botones"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="146dp"
+        android:layout_height="55dp"
 
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="19dp"
         android:text="@string/botonBorrar"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/TextId"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/TextApellido"
+        app:layout_constraintEnd_toEndOf="@+id/TextApellido"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/botonRegresar"
         style="@style/botones"
-        android:layout_width="242dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="83dp"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
 
-        android:layout_marginEnd="85dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="96dp"
         android:text="@string/botonRegrasar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/TextApellido"
-        app:layout_constraintStart_toStartOf="@+id/TextContraseña"
-        app:layout_constraintTop_toBottomOf="@+id/buttonActualizar" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/TextApellido" />
 
     <Button
         android:id="@+id/buttonActualizar"
         style="@style/botones"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
         android:text="@string/botonActualizar"
-        app:layout_constraintBottom_toTopOf="@+id/botonRegresar"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonRegresar"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/TextContraseña"
-        app:layout_constraintTop_toBottomOf="@+id/TextApellido" />
+        app:layout_constraintTop_toBottomOf="@+id/TextApellido"
+        app:layout_constraintVertical_bias="0.506" />
 
     <TextView
         android:id="@+id/textView"
         style="@style/editTexTBlanco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="21dp"
         android:text="@string/textoModificarActualizar"
-        app:layout_constraintBottom_toTopOf="@+id/buttonBorrar"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/TextId"
+        app:layout_constraintStart_toStartOf="@+id/TextId"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         style="@style/editTexTBlanco"
-        android:layout_width="289dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="19dp"
+        android:layout_width="324dp"
+        android:layout_height="24dp"
         android:text="@string/camposActualizar"
         app:layout_constraintBottom_toTopOf="@+id/TextApellido"
-        app:layout_constraintStart_toStartOf="@+id/TextId"
-        app:layout_constraintTop_toBottomOf="@+id/buttonBorrar" />
+        app:layout_constraintStart_toStartOf="@+id/TextNombre"
+        app:layout_constraintTop_toBottomOf="@+id/TextId" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="textView,TextContraseña,buttonBorrar,TextNombre,TextId,botonRegresar,buttonActualizar,textView2,TextApellido"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:constraint_referenced_ids="textView,TextContraseña,buttonBorrar,TextNombre,TextId,botonRegresar,buttonActualizar,textView2,TextApellido" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

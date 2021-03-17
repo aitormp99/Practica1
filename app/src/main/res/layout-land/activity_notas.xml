@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pizarra"
+    tools:context=".Notas">
+
+    <EditText
+        android:id="@+id/editTextFichero"
+        android:layout_width="301dp"
+        android:layout_height="163dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonLeer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonBack"
+        style="@style/botones"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:text="@string/botonRegrasar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonLeer" />
+
+    <Button
+        android:id="@+id/botonLeer"
+        style="@style/botones"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:text="leer"
+        app:layout_constraintBottom_toTopOf="@+id/botonBack"
+        app:layout_constraintEnd_toEndOf="@+id/botonBack"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/botonBack"
+        app:layout_constraintTop_toBottomOf="@+id/botonGuardar" />
+
+    <Button
+        android:id="@+id/botonGuardar"
+        style="@style/botones"
+        android:layout_width="212dp"
+        android:layout_height="48dp"
+        android:text="Guardar"
+        app:layout_constraintBottom_toTopOf="@+id/botonLeer"
+        app:layout_constraintEnd_toEndOf="@+id/botonLeer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/botonLeer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

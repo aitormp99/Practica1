@@ -12,12 +12,11 @@
         style="@style/botones"
         android:layout_width="231dp"
         android:layout_height="45dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="94dp"
         android:text="@string/botonRegistrarte"
         app:layout_constraintBottom_toTopOf="@+id/botonActualizarEliminar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/botonActualizarEliminar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/botonActualizarEliminar"
         app:layout_constraintTop_toBottomOf="@+id/botonLogin" />
 
     <Button
@@ -25,13 +24,11 @@
         style="@style/botones"
         android:layout_width="229dp"
         android:layout_height="51dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="94dp"
         android:text="@string/botonLogin"
         app:layout_constraintBottom_toTopOf="@+id/buttonRegistro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegistro"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegistro"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -39,13 +36,9 @@
         style="@style/botones"
         android:layout_width="232dp"
         android:layout_height="55dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="94dp"
-        android:layout_marginBottom="110dp"
         android:text="@string/botonActualizarBorrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ajustes"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegistro" />
 
@@ -53,10 +46,9 @@
         android:id="@+id/imageView"
         android:layout_width="189dp"
         android:layout_height="93dp"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="91dp"
         app:layout_constraintBottom_toTopOf="@+id/ajustes"
         app:layout_constraintEnd_toEndOf="@+id/ajustes"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_supervised_user_circle_24" />
@@ -66,9 +58,6 @@
         style="@style/botones"
         android:layout_width="188dp"
         android:layout_height="55dp"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="110dp"
         android:drawableLeft="@drawable/ic_baseline_settings_24"
         android:text="@string/ajustes"
         app:layout_constraintBottom_toBottomOf="parent"

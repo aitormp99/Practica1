@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimeraPractica">
-        <activity android:name=".MainActivity" >
+        <activity android:name=".Notas"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Preferencias" ></activity>
-        <activity android:name=".ActualizarEliminar"/>
+        <activity android:name=".Preferencias" />
+        <activity android:name=".ActualizarEliminar" />
         <activity android:name=".ListaLibros" />
-        <activity android:name=".InsertarLibro"/>
+        <activity android:name=".InsertarLibro" />
         <activity android:name=".Registro" />
         <activity android:name=".MenuLibro" />
-
     </application>
 
 </manifest>
