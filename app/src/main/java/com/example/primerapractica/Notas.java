@@ -88,7 +88,7 @@ public class Notas extends AppCompatActivity {
 
 
     }
-
+    /*Metodo para guardar el fichero de texto*/
     private void saveFile(){
         String textoASalvar = editText.getText().toString();
         FileOutputStream fileOutputStream = null;
@@ -109,7 +109,7 @@ public class Notas extends AppCompatActivity {
             }
         }
     }
-
+    /*Metodo para leer el fichero de texto*/
     private void readFile(){
         FileInputStream fileInputStream = null;
         try{
